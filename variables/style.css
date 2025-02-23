@@ -1,0 +1,15 @@
+/*color de fondo*/
+body{background-color: rgb(218, 218, 218);}
+
+/*color de texto*/
+p {color: Azure;}
+
+/*selector de clase con color de letra y tamaño*/
+
+.muro {color:black; font-size: 50px;}
+
+h1{color: rgb(101, 245, 197); text-align: center;}
+
+h2{color: #fbff00; text-align: center;}
+
+
