@@ -1,0 +1,16 @@
+body{background-color: hotpink;}
+
+h1 {
+    color: #65ceff; /* Rojo oscuro para el título */
+    text-align: center;
+}
+div {
+    background-color: #4a90e2; /* Azul vibrante para destacar */
+    margin: 20px auto;
+}
+
+p {
+    color: #ffffff; /* Blanco para que contraste con el azul del div */
+    font-size: 18px;
+    
+}
