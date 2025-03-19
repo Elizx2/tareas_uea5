@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+}
+
+.center{ background-color: darkslateblue;
+font-size: 24px;
+padding: 10px;
+float: left;
+width: 30% ;
+}
+.izquierda{
+background-color: brown;
+font-size: 24px;
+padding: 10px;
+float: left;
+width: 30% ;
+}
+.derecha{
+background-color: burlywood;
+font-size: 24px;
+padding: 10px;
+float: left;
+width: 30% ;
+}
