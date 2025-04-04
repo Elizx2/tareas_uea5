@@ -1,0 +1,66 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* marco de las lineas */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  height: 120px;
+  overflow: hidden;
+}
+
+/* Estilo del SVG */
+.heartbeat {
+  background-color: #000;
+}
+
+/* Animación de los latidos*/
+.linea {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: latido 3s infinite linear;
+}
+
+
+/* Definición de la animacion */
+@keyframes latido {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Texto */
+.text-overlay {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  animation: fadeIn 3s ease-in-out;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ff0000;
+  text-shadow: 0 0 15px #ff0000;
+}
+
+/* Animación del Texto */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  

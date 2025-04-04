@@ -1,0 +1,52 @@
+
+body {
+    background-color: #d0e9ff;
+    font-family: Arial, sans-serif;
+}
+
+/* título */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+/*  fotos */
+.galeria {
+    background-color: darkslateblue;
+    text-align: center;
+    margin: 20px 0;
+    
+}
+
+.galeria img {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    border-radius: 8px;
+    
+}
+
+/*  texto */
+.descripcion {
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #ffffff;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+    
+    
+}
+
+
+.video {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+.audio {
+    text-align: center;
+    margin: 20px 0;
+}

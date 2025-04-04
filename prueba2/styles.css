@@ -1,0 +1,96 @@
+
+/* Reseteo General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Fondo Dinámico Verde */
+.heartbeats {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #00ff00, #0f0f0f);
+  background-size: 400% 400%;
+  animation: backgroundPulse 8s infinite ease-in-out;
+  z-index: -1;
+}
+
+/* Animación del Fondo */
+/*@keyframes backgroundPulse {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}*/
+
+/* Contenedor de ECG 
+.ecg-container {
+  position: relative;
+  width: 90vw;
+  height: 50vh;
+  border: 4px solid #ff0000;
+  box-shadow: 0 0 20px #ff0000;
+  background-color: black;
+  overflow: hidden;
+}*/
+
+/* Línea ECG */
+.ecg-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 200%;
+  height: 2px;
+  background: transparent;
+  border-top: 2px solid #00ff00;
+  animation: heartbeat 3s linear infinite;
+}
+
+/* Animación del ECG */
+@keyframes heartbeat {
+  0% { transform: translateX(0); }
+  5% { transform: translateY(-10px); }
+  10% { transform: translateY(5px); }
+  15% { transform: translateY(0); }
+  20% { transform: translateY(-20px); }
+  25% { transform: translateY(10px); }
+  30% { transform: translateY(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Texto Superpuesto */
+.text-overlay {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  animation: fadeIn 3s ease-in-out;
+}
+
+/* Estilo del Texto */
+h1 {
+  font-size: 2.5rem;
+  color: #00ff00;
+  text-shadow: 0 0 15px #00ff00;
+}
+
+/* Animación del Texto */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
